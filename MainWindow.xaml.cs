@@ -52,7 +52,10 @@ namespace CursorHighlighter
             var pt = GetMousePosition();
             using(var g = Graphics.FromHwnd(IntPtr.Zero))
             {
-                g.DrawEllipse(Pens.YellowGreen, pt.X, pt.Y, 20, 20);
+                using(var b = new SolidBrush(System.Drawing.Color.FromArgb(100, 154,205,50)))
+                {
+                    g.FillEllipse(b, pt.X, pt.Y, 100, 100);
+                }
             }
         }
 
