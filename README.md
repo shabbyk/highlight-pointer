@@ -1,2 +1,5 @@
 # highlight-pointer
-WPF to high light your pointer
+
+Simple WPF Application to high light your cursor.
+
+Currently draws a circle around cursor, which is traced.
