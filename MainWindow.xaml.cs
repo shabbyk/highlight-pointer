@@ -59,7 +59,7 @@ namespace CursorHighlighter
             }
         }
 
-        public static System.Drawing.Point GetMousePosition()
+        public System.Drawing.Point GetMousePosition()
         {
             var w32Mouse = new Win32Point();
             GetCursorPos(ref w32Mouse);
